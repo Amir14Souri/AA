@@ -1,0 +1,35 @@
+.button {
+    -fx-text-fill: white;
+    -fx-background-color: black;
+}
+
+.button:hover {
+    -fx-background-color: #2b2b2b;
+}
+
+.root {
+    -fx-background-color: white;
+}
+
+.text-field {
+    -fx-background-color: #d6d6d6;
+    -fx-border-width: 1.2;
+    -fx-border-color: black;
+    -fx-border-style: dotted;
+}
+
+.text-input {
+    -fx-text-fill: black;
+}
+
+.choice-box {
+    -fx-background-color: #d6d6d6;
+    -fx-border-width: 1.2;
+    -fx-border-color: black;
+    -fx-border-style: dotted;
+    -fx-text-fill: black;
+}
+
+.progress-bar {
+    -fx-accent: black;
+}

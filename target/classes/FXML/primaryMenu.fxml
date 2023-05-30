@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.Text?>
+<GridPane xmlns="http://javafx.com/javafx"
+          xmlns:fx="http://javafx.com/fxml"
+          fx:controller="view.PrimaryMenu"
+          prefHeight="300.0" prefWidth="300.0"
+          alignment="center" hgap="10" vgap="20">
+
+    <Text fx:id="welcome" GridPane.columnIndex="0" GridPane.rowIndex="0">Welcome to AA !!</Text>
+    <Button fx:id="register" text="Register" GridPane.columnIndex="0" GridPane.rowIndex="1"
+            GridPane.halignment="CENTER" onAction="#registerMenu"/>
+    <Button fx:id="login" text="Login" GridPane.columnIndex="0" GridPane.rowIndex="2"
+            GridPane.halignment="CENTER" onAction="#registerMenu"/>
+    <Button fx:id="skip" text="Enter as a Guest" GridPane.columnIndex="0" GridPane.rowIndex="3"
+            GridPane.halignment="CENTER" onAction="#gameMenu"/>
+</GridPane>

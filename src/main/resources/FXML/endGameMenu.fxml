@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.Text?>
+<GridPane xmlns="http://javafx.com/javafx"
+          xmlns:fx="http://javafx.com/fxml"
+          fx:controller="view.EndGameMenu"
+          prefHeight="200.0" prefWidth="300.0"
+          alignment="CENTER" hgap="10" vgap="20">
+    <Text fx:id="point" GridPane.columnIndex="0" GridPane.rowIndex="1"></Text>
+    <Text fx:id="time" GridPane.columnIndex="0" GridPane.rowIndex="2"></Text>
+    <Button fx:id="scoreboard" text="Scoreboard" GridPane.columnIndex="0" GridPane.rowIndex="3"
+            GridPane.halignment="CENTER" onAction="#scoreboard"/>
+</GridPane>

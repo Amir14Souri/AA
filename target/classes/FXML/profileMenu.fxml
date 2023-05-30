@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.Text?>
+<GridPane xmlns="http://javafx.com/javafx"
+          xmlns:fx="http://javafx.com/fxml"
+          fx:controller="view.ProfileMenu"
+          prefHeight="550.0" prefWidth="700.0"
+          alignment="CENTER" hgap="10" vgap="15">
+
+    <Label fx:id="username" GridPane.columnIndex="0" GridPane.rowIndex="2" GridPane.halignment="RIGHT">username:</Label>
+    <TextField fx:id="usernameField" GridPane.columnIndex="1" GridPane.rowIndex="2"></TextField>
+    <Button fx:id="usernameButton" text="Change" GridPane.columnIndex="2" GridPane.rowIndex="2" onAction="#changeUsername"/>
+    <Text fx:id="usernameError" GridPane.columnIndex="0" GridPane.rowIndex="3" GridPane.halignment="CENTER" GridPane.columnSpan="2"></Text>
+    <Label fx:id="oldPassword" GridPane.columnIndex="0" GridPane.rowIndex="4" GridPane.halignment="RIGHT">Old
+        Password:
+    </Label>
+    <PasswordField fx:id="oldPasswordField" GridPane.columnIndex="1" GridPane.rowIndex="4"/>
+    <Text fx:id="oldPasswordError" GridPane.columnIndex="0" GridPane.rowIndex="5" GridPane.halignment="CENTER" GridPane.columnSpan="2"></Text>
+    <Label fx:id="newPassword" GridPane.columnIndex="0" GridPane.rowIndex="6" GridPane.halignment="RIGHT">New
+        Password:
+    </Label>
+    <PasswordField fx:id="newPasswordField" GridPane.columnIndex="1" GridPane.rowIndex="6"/>
+    <Text fx:id="newPasswordError" GridPane.columnIndex="0" GridPane.rowIndex="7" GridPane.halignment="CENTER" GridPane.columnSpan="2"></Text>
+    <Label fx:id="confirmPassword" GridPane.columnIndex="0" GridPane.rowIndex="8" GridPane.halignment="RIGHT">Confirm
+        Password:
+    </Label>
+    <PasswordField fx:id="confirmPasswordField" GridPane.columnIndex="1" GridPane.rowIndex="8"/>
+    <Button fx:id="changePassword" text="Change Password" GridPane.columnIndex="2" GridPane.rowIndex="8" onAction="#changePassword"/>
+    <Text fx:id="confirmPasswordError" GridPane.columnIndex="0" GridPane.rowIndex="9" GridPane.halignment="CENTER" GridPane.columnSpan="2"></Text>
+    <Button fx:id="back" text="Back" GridPane.columnIndex="0" GridPane.rowIndex="10" prefWidth="150"
+            GridPane.halignment="CENTER" onAction="#mainMenu"/>
+    <Button fx:id="deleteAccount" text="Delete Account" GridPane.columnIndex="1" GridPane.rowIndex="10" prefWidth="150"
+            GridPane.halignment="CENTER" onAction="#deleteAccount"/>
+    <Button fx:id="logout" text="Logout" GridPane.columnIndex="2" GridPane.rowIndex="10" prefWidth="150"
+            GridPane.halignment="CENTER" onAction="#logout"/>
+</GridPane>

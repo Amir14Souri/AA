@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.Text?>
+<GridPane xmlns="http://javafx.com/javafx"
+          xmlns:fx="http://javafx.com/fxml"
+          fx:controller="view.RegisterMenu"
+          prefHeight="600.0" prefWidth="400.0"
+          alignment="CENTER" hgap="10" vgap="10">
+
+    <Text fx:id="hello" GridPane.columnIndex="0" GridPane.rowIndex="0" GridPane.columnSpan="2"
+          GridPane.halignment="CENTER">Hello
+    </Text>
+    <Label fx:id="username" GridPane.columnIndex="0" GridPane.rowIndex="3" GridPane.halignment="RIGHT">username:</Label>
+    <TextField fx:id="usernameField" GridPane.columnIndex="1" GridPane.rowIndex="3"/>
+    <Text fx:id="usernameError" GridPane.columnIndex="0" GridPane.rowIndex="4" GridPane.columnSpan="2"
+          GridPane.halignment="CENTER"></Text>
+    <Label fx:id="password" GridPane.columnIndex="0" GridPane.rowIndex="5" GridPane.halignment="RIGHT">password:</Label>
+    <PasswordField fx:id="passwordField" GridPane.columnIndex="1" GridPane.rowIndex="5"/>
+    <Text fx:id="passwordError" GridPane.columnIndex="0" GridPane.rowIndex="6" GridPane.columnSpan="2"
+          GridPane.halignment="CENTER"></Text>
+    <HBox GridPane.columnIndex="0" GridPane.rowIndex="7" GridPane.columnSpan="2" alignment="CENTER" spacing="25">
+        <Button fx:id="back" text="Back" onAction="#backToPrimaryMenu"/>
+        <Button fx:id="register" text="Register" onAction="#register"/>
+    </HBox>
+</GridPane>

@@ -1,0 +1,50 @@
+.redBar {
+    -fx-accent: red;
+}
+
+.orangeBar {
+    -fx-accent: orange;
+}
+
+.yellowBar {
+    -fx-accent: yellow;
+}
+
+.greenBar {
+    -fx-accent: green;
+}
+
+.button {
+    -fx-border-width: 1.2;
+    -fx-border-color: black;
+    -fx-border-style: dotted;
+    -fx-text-fill: #040ab5;
+    -fx-background-color: #49eba2;
+}
+
+.button:hover {
+    -fx-background-color: #4dfaac;
+}
+
+.root {
+    -fx-background-color: #d4faf4;
+}
+
+.text-field {
+    -fx-background-color: #e9fce8;
+    -fx-border-width: 1.2;
+    -fx-border-color: black;
+    -fx-border-style: dotted;
+}
+
+.text-input {
+    -fx-text-fill: #040ab5;
+}
+
+.choice-box {
+    -fx-background-color: #e9fce8;
+    -fx-border-width: 1.2;
+    -fx-border-color: black;
+    -fx-border-style: dotted;
+    -fx-text-fill: #040ab5;
+}
